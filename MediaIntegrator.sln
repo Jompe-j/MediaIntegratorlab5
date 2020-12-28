@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaIntegrator", "MediaIntegrator\MediaIntegrator.csproj", "{788E0FC0-D68D-4A11-88B1-ABB1F468F868}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{788E0FC0-D68D-4A11-88B1-ABB1F468F868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788E0FC0-D68D-4A11-88B1-ABB1F468F868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788E0FC0-D68D-4A11-88B1-ABB1F468F868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788E0FC0-D68D-4A11-88B1-ABB1F468F868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

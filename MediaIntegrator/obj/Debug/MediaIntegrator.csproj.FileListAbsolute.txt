@@ -1,0 +1,9 @@
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\bin\Debug\MediaIntegrator.exe.config
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\bin\Debug\MediaIntegrator.exe
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\bin\Debug\MediaIntegrator.pdb
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.csprojAssemblyReference.cache
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.Properties.Resources.resources
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.csproj.GenerateResource.cache
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.csproj.CoreCompileInputs.cache
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.exe
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.pdb
