@@ -3,8 +3,8 @@ using System.Linq;
 using System.Xml.Linq;
 
 namespace MediaIntegrator {
-    class InventoryMigrator {
-        public XElement GenerateXml(IEnumerable<string> csv) {
+    static class InventoryMigrator {
+        public static XElement GenerateSimpleMediaXmlFromMyStoreCsv(IEnumerable<string> csv) {
             var xmlInventory = new XElement("Inventory",
                 from itm in csv
                 let fields = itm.Split(';')

@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace MediaIntegrator {
@@ -15,6 +15,7 @@ namespace MediaIntegrator {
         private void runWatcher_Click(object sender, EventArgs e) {
             if (string.IsNullOrWhiteSpace(_watchFolderPath) || string.IsNullOrWhiteSpace(_targetFolderPath)) return;
 
+            statusLabel.Text = "Running...";
             fileSystemWatcher1.Path = _watchFolderPath;
             fileSystemWatcher1.EnableRaisingEvents = true;
         }
@@ -42,18 +43,29 @@ namespace MediaIntegrator {
         }
 
         private void file_Created(object sender, FileSystemEventArgs e) {
-            MessageBox.Show($@" new file! names {e.Name}");
+            var worked = true;
+            var tries = 0;
+            do {
+                try {
+                    var allLines = File.ReadAllLines(e.FullPath);
 
-            var fr = File.ReadAllLines(e.FullPath);
+                    var xmlInventory = InventoryMigrator.GenerateSimpleMediaXmlFromMyStoreCsv(allLines);
 
-            foreach (var s in fr) {
-                Debug.WriteLine(s);
-            }
-
-            var inventory = new InventoryMigrator();
-            var xmlInventory = inventory.GenerateXml(fr);
-
-            xmlInventory.Save(Path.Combine(_targetFolderPath, "inventory.xml"));
+                    xmlInventory.Save(Path.Combine(_targetFolderPath, "inventory.xml"));
+                }
+                catch (IOException exception) {
+                    Console.WriteLine(exception);
+                    //Handles issues if several files are put into the watched folder to quickly. 
+                    worked = false;
+                    if (tries < 10) {
+                        tries++;
+                        Thread.Sleep(500);
+                    }
+                    else {
+                        worked = true;
+                    }
+                }
+            } while (!worked);
         }
     }
 }

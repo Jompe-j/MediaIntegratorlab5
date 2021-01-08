@@ -7,3 +7,4 @@ C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegra
 C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.csproj.CoreCompileInputs.cache
 C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.exe
 C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.pdb
+C:\Users\johna\kod\CSharp\MediaIntegrator\MediaIntegrator\obj\Debug\MediaIntegrator.MediaIntegratorForm.resources

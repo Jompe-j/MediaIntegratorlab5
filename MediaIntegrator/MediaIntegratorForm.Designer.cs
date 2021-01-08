@@ -31,7 +31,7 @@
             this.targetFolderLabel = new System.Windows.Forms.Label();
             this.statusLabel = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // watchedFolderButton
@@ -84,6 +84,7 @@
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(223, 25);
             this.statusLabel.TabIndex = 1;
+            this.statusLabel.Text = "Not Running";
             // 
             // fileSystemWatcher1
             // 
@@ -104,10 +105,9 @@
             this.Controls.Add(this.targetFolderButton);
             this.Controls.Add(this.watchedFolderButton);
             this.Name = "MediaIntegratorForm";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.Text = "CSV -> XML Watcher";
+            ((System.ComponentModel.ISupportInitialize) (this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         private System.IO.FileSystemWatcher fileSystemWatcher1;
