@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
@@ -54,7 +55,7 @@ namespace MediaIntegrator {
                     xmlInventory.Save(Path.Combine(_targetFolderPath, "inventory.xml"));
                 }
                 catch (IOException exception) {
-                    Console.WriteLine(exception);
+                    Debug.WriteLine(exception);
                     //Handles issues if several files are put into the watched folder to quickly. 
                     worked = false;
                     if (tries < 10) {
